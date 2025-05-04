@@ -1,0 +1,77 @@
+
+:root {
+    /* colores */
+    --bg-color: #FFFCF2;
+    --text-dark: #252422;
+    --text-muted: #403D39;
+    --accent-color: #EB5E28;
+    --card-bg: #CCC5B9;
+  }
+
+  body {
+    background-color:var(--bg-color);
+  }
+.header{
+    background-color: var(--text-dark);
+    color: var(--bg-color);
+    animation: slideDowFade 0.8s ease-out forwards;
+  opacity: 0;
+}
+.navBarRow{
+    display: flex;
+    align-items: center;
+  gap: 20px; 
+}
+ .avatar{
+    width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  object-fit: cover;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+
+}
+
+.avatar:hover{
+    transform: scale(1.2);
+}
+
+
+
+.active {
+    color: var(--accent-color);
+  }
+@keyframes slideDowFade {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      } 
+}
+ .title {
+    display: flex;
+    justify-content: center;
+ } 
+
+ .navList {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+    width: 100%;
+   
+ }
+.navList a {
+    transition: color 0.3s ease;
+
+}
+
+ .navList a:hover{
+    color: var(--accent-color);
+ }
+ nav {
+    flex: 1; /* ✅ fuerza al nav a ocupar el espacio restante */
+  }
+ 

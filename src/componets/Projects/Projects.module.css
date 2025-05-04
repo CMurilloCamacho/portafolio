@@ -1,0 +1,62 @@
+.projects {
+    padding: 3em 1.5em;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  
+  .projectList {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .cardTitle {
+    margin: 0;
+    color: var(--text-dark);
+    font-size: 1.3rem;
+  }
+  
+  .cardDesc {
+    color: var(--text-muted);
+    margin-top: 0.5em;
+    line-height: 1.5;
+  }
+  

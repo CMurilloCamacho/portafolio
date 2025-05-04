@@ -1,0 +1,51 @@
+:root {
+    --bg-color: #FFFCF2;
+    --text-dark: #252422;
+    --text-muted: #403D39;
+    --accent-color: #EB5E28;
+    --card-bg: #CCC5B9;
+  }
+  
+  .contactSection {
+    padding: 4em 2em;
+    background-color: var(--bg-color);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5em;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2em;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .contactItem:hover {
+    color: var(--accent-color);
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }
+  
